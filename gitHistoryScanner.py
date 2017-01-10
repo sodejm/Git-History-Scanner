@@ -10,6 +10,7 @@ import tempfile
 from git import Repo
 import re
 from prettytable import PrettyTable
+
 # check if python v2 or v3, we want v3
 if sys.version_info[0] == 2:
 	reload(sys)
@@ -19,7 +20,7 @@ if sys.version_info[0] == 2:
 table = PrettyTable(['Type', 'Line', 'Line Number', 'Commit'])
 
 # creating a regex match function to call from the blob loop
-def check_for_creds(line, linenumber, commit): #, committosearch):
+def check_for_creds(line, linenumber, commit)::
 
 	# could probably build these from a file similar to here:
 	# http://stackoverflow.com/questions/3199171/append-multiple-values-for-one-key-in-python-dictionary
