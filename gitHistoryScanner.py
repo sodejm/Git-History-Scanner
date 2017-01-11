@@ -3,8 +3,6 @@
 #Requirement: Python3 and GitPython 2.1.1
 
 import sys
-import math
-import datetime
 import argparse
 import tempfile
 from git import Repo
